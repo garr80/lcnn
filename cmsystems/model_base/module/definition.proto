@@ -1,0 +1,12 @@
+syntax="proto2";
+package caffe;
+
+message Datum {
+  optional int32 frame_length = 1;
+  optional int32 feature_dim= 2;
+  optional int32 speaker_label= 3;
+
+  optional bytes data = 4;
+  optional bytes system_id = 5;
+  optional bytes wave_name = 6;
+}
